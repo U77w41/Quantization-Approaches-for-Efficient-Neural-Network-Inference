@@ -18,40 +18,36 @@ if __name__ == "__main__":
 ###########################################################################
 #      Uncomment the below to create the basic project structure        #
 ###########################################################################
-
-
 # import os
 
 # # Directories needed
-# dirs = [
-#     os.path.join("data", "raw"),
-#     os.path.join("data","processed"),
-#     "docs",
-#     "references",
-#     "reports",
-#     "notebooks",
-#     "saved_models",
-#     "src"
-# ]
+# dirs = ["data",
+#         os.path.join("data", "raw"),
+#         os.path.join("data","processed"),
+#         "docs",
+#         "references",
+#         "reports",
+#         "notebooks",
+#         "saved_models",
+#         "src"]
 
 # # Creating the directories
 # for dir in dirs:
-#     if not os.listdir(dir):
-#         os.makedirs(dir , exist_ok=True)
-        
+#     os.makedirs(dir, exist_ok=True)
 
+# # Files to create
 # files = ['params.yaml',
-#         '.gitignore', # Here we push all the files which we dont want to push into git
-#         'requirements.txt',
-#         os.path.join('src' , '__init__.py' ),
-#         os.path.join('notebooks', 'quantization_tutorial.ipynb')]
+#          '.gitignore',  # Here we push all the files which we don't want to push into git
+#          'requirements.txt',
+#          os.path.join('src', '__init__.py'),
+#          os.path.join('notebooks', 'havells_demo.ipynb')]
 
-# # Creating some inistial files
+# # Creating initial files
 # for file_ in files:
 #     if not os.path.exists(file_):
 #         with open(file_, "w") as f:
 #             pass
-    
+
 # # Adding the .gitkeep files to the empty directories
 # for dir in dirs:
 #     if not os.listdir(dir):

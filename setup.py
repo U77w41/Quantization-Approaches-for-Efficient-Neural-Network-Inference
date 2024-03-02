@@ -16,7 +16,7 @@ if __name__ == "__main__":
 
 
 ###########################################################################
-#      Comment out the below to create the basic project structure        #
+#      Uncomment the below to create the basic project structure        #
 ###########################################################################
 
 
